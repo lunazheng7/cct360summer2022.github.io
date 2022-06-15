@@ -1,0 +1,306 @@
+html{
+	font-family: Open Sans, sans-serif;
+	font-size: 16px; /* root font-size; "rems" are based on it.*/
+	line-height: normal;
+}
+
+/* Main  Navigation */
+
+#navigation{
+	max-width: 80rem;
+	margin: 0 auto;
+	display: flex; /* make this a flex container */
+}
+
+#navigation .logo{
+  display:block;
+  line-height: 48px;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#navigation .logo img{
+	margin: 3px 2px 0 16px;
+	vertical-align: middle;
+}
+
+.menuButton{
+  border-left: 1px solid #e60505;
+  color: #e60505; /* CBC Red */
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 1.1rem;
+  margin-left: 1.1rem;
+  align-self: center;  /* Override default flex alignment */
+  cursor: pointer; /* Gives a Hand pointer on hover. */
+}
+
+.menuButton .chevronIcon{
+  background: #fff;
+  border-radius: 10px;
+  fill: #e60505;
+  margin-left: 2px;
+  padding: 3px 2px 1px;
+}
+
+.menuButton:hover {
+	color: #000; /*Black*/
+}
+
+.menuButton:hover .chevronIcon{
+  background: #e60505;
+	fill: #fff;
+}
+
+.sideMenu{
+	margin-left: auto;
+	align-self:center;
+}
+.sideMenu a{
+	display: block;
+	cursor: pointer;
+}
+
+/* Main Navigation  Popup Menu */
+
+#mainMenu{
+	display: none;
+	position: relative;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+#mainMenu.open{
+	display: block;
+}
+#mainMenu ul{
+	position: absolute;
+	z-index: 1;
+	margin:0;
+	padding:0 0 10px 0;
+	background: #545454;
+	display: flex;
+	flex-direction: column;
+	width: 20rem;
+}
+#mainMenu li {
+	list-style-type: none;
+}
+#mainMenu li a{
+	color: #fff;
+  display: block;
+	text-align: center;
+  font-size: .9rem;
+  margin: .3rem .5rem;
+  padding: .7rem .5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#mainMenu li a:hover{
+	background: #fff;
+  color: #e60505;
+  text-decoration: none;
+}
+
+/* Sub Navigation */
+
+#subNav{
+	border-top: 1px solid #eaeaea;
+}
+
+#subNav ul{
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0px;
+	display: flex;
+	align-items: center; /* centre items along row (or column)  */
+	flex-flow: row wrap;
+	min-height: 48px;
+}
+
+#subNav ul li{
+	list-style-type: none;  /* remove bullets */
+  white-space: nowrap;	/* keep link text on one line */
+	flex: 0 1 auto; /* the zeros here mean: do not grow or shrink */
+  margin: 0;
+}
+
+#subNav ul li a {
+	display: block;
+	padding: 13px 16px;
+	color: #000;
+	text-decoration: none;
+	font-size: .85rem;
+	line-height: 1.4;
+	font-weight: 700;
+}
+
+#subNav ul li a.gem{
+	color: #545454;
+  font-size: 1.1rem;
+  padding: 11px 16px;
+}
+
+#subNav ul li a:hover{
+	text-decoration: underline;
+}
+
+/* Advertisement */
+#adspace{
+  background-color: #e5e5e5;
+  height: 100px;
+	padding: 20px;
+  background-image: url(../img/adspace.gif);
+  background-repeat: no-repeat;
+  background-position: 100% 50%; /* x y */
+}
+
+.advertisement{
+  display: block;
+	margin: 0px auto;
+  width: 740px;
+	height: 90px;
+	background-image: url(../img/advert.jpg);
+  background-size: cover;
+  border: 2px solid #999999;
+}
+
+/* Main Content Area */
+#content {
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 1rem; /* applies on all sides. */
+	min-height: 75vh;
+}
+
+/*  Welcome message */
+#content h1 {
+	padding: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1.7em;
+  margin: 0.67em 0 0.5em 0; /* top right bottom left */
+  text-transform: uppercase; /* capitalize all the letters*/
+  border-bottom: 1px solid #000;
+}
+
+/* flex container for new and sidebar*/
+/* Wes Bos has a course on this! https://flexbox.io/ */
+#content .wrapper{
+	display: flex;
+	align-items: flex-start;  /* align to top */
+  flex-flow: row wrap; /* wrap sidebar on small screens */
+}
+
+#content #news{
+	flex: 1 1 40rem;
+}
+
+#content #sidebar{
+	flex: 0 0 300px;
+	margin: 0 .5rem;
+	/*height: 300px;
+	background: #ddd;*/
+}
+
+
+/* Sidebar Widget*/
+
+.widget{
+	padding: 1.5rem;
+	margin-top: 1rem;
+	background: #f4f4f4;
+	border: 1px solid #dfdfdf;
+}
+.widget h2{
+	margin: 0;
+	text-align: center;
+}
+.widget p{
+	margin-top: 1rem;
+	font-size: 14px;
+	margin: 0;
+	line-height: 1.3;
+}
+.widget label{
+	color: #707070;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 1rem;
+  display: block;
+}
+
+/* attribute selectors let us style form elements*/
+.widget input[type="email"]{
+	width: 100%;
+	box-sizing: border-box;
+	/* by default, padding and border are added to the width.
+	here box-sizing includes them as part of the 100% width*/
+  padding: 7px;
+  font-size: .9rem;
+  border: 1px solid #727272;
+	margin-bottom: 1rem;
+}
+
+.widget input[type="submit"]{
+	font-size: 1rem;
+	text-align: center;
+  padding: .35rem 1rem;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #000;
+  background: #000;
+}
+
+
+#content .testBlock{
+	background: red;
+	height: 50px;
+	color: #fff;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+ /* Footer. */
+#footer{
+	display:block;
+	background: #000;
+	color: #fff;
+}
+#footer ul{
+	max-width: 80rem;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	margin: 0 auto;
+	padding: 0;
+}
+#footer li{
+	list-style-type: none;
+	flex: 1 1 230px;
+	font-size: .75rem;
+	padding: 1rem;
+	font-weight: 700;
+}
+#footer a{
+	color: #fff;
+	text-decoration: none;
+}
+#footer a:hover{
+	text-decoration: underline;
+}
+
+
+#footer li.extendedLogo figure { margin:0; }
+#footer li.extendedLogo img { width:220px; }
+
+#footer li.radioCanada a{ color: #fff; }
+
+/* Make our sidebar full side on smaller screens */
+@media (max-width: 1068px){
+	#content #sidebar{
+		flex-grow: 1;
+	}
+}

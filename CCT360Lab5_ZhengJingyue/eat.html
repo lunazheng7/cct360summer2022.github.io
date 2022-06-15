@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Created by Harold Sikkema, with inspiration from cbc.ca -->
+	<meta charset="UTF-8">
+	<title>cacticious - edible cacti</title>
+	<link type="text/css" href="css/normalize.css" rel="stylesheet">
+	<link type="text/css" href="css/styles.css" rel="stylesheet">
+	<link type="text/css" href="css/eat.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+		/* This basic menu toggle differs from CBC's version. */
+		function toggleMenu() {
+			var mainMenu = document.getElementById("mainMenu");
+			mainMenu.classList.toggle('open');
+		}
+
+
+	</script>
+
+</head>
+
+<body id="eat">
+	<header>
+		<nav id="navigation">
+			<a class="logo" href="/">
+				<span>
+					<!-- SVG embedded via img tag -->
+					<!-- NOTE: width and height are set explicitly -->
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" style="width: 40px;">
+          <path d="M23.4,11.4c-1.6,0-2.8,1.3-2.8,2.8v5.1h-1.4V3.8c0-2.1-1.7-3.8-3.8-3.8h-1.5c-2.1,0-3.8,1.7-3.8,3.8v9.9H8.9
+          	H8.7V8.6c0-1.6-1.3-2.8-2.8-2.8S3,7.1,3,8.6v7.9c0,1.6,1.3,2.8,2.8,2.8h4.2v13.3H6.5c-0.4,0-0.6,0.3-0.6,0.6V34h17.5v-0.6
+          	c0-0.4-0.3-0.6-0.6-0.6h-3.6V25h4.2c1.6,0,2.8-1.3,2.8-2.8v-7.9C26.2,12.7,24.9,11.4,23.4,11.4z M12.9,26c-0.3,0-0.6-0.3-0.6-0.6
+          	c0-0.3,0.3-0.6,0.6-0.6c0.3,0,0.6,0.3,0.6,0.6C13.4,25.8,13.2,26,12.9,26z M13.9,6.6c-0.3,0-0.6-0.3-0.6-0.6s0.3-0.6,0.6-0.6
+          	c0.3,0,0.6,0.3,0.6,0.6S14.2,6.6,13.9,6.6z M16.7,16.9c-0.3,0.4-1,0.5-1.4,0.2c-0.4-0.3-0.5-1-0.2-1.4s1-0.5,1.4-0.2
+          	C16.9,15.8,17,16.4,16.7,16.9z"/>
+          </svg>
+				</span>
+				<span>cacticious</span>
+			</a>
+			<a class="menuButton" onclick="toggleMenu();">
+				Garden
+				<span>
+					<!-- SVG embedded as inline markup: CSS will be applied. -->
+					<svg class="chevronIcon" width="10px" height="10px" viewBox="0 0 10 10" focusable="false" aria-hidden="true">
+						<g>
+							<path d="M10,0v3L5,7L0,3V0l5,4L10,0z"></path>
+						</g>
+					</svg>
+					<span>
+			</a>
+			<div class="sideMenu">
+        <a aria-label="Facebook" href="#" class="fa fa-facebook"></a>
+        <a aria-label="Twitter" href="#" class="fa fa-twitter"></a>
+        <a aria-label="Instagram" href="#" class="fa fa-instagram"></a>
+			</div>
+		</nav>
+		<!-- this menu is toggled with JavaScript -->
+		<nav id="mainMenu">
+			<ul>
+				<li><a href="/">New  Cacti</a></li>
+				<li><a href="/">Favourites</a></li>
+				<li><a href="/">Cacti Archives</a></li>
+			</ul>
+		</nav>
+		<nav id="subNav">
+			<ul>
+				<li><a class="gem" href="/"><img alt="Bookmark Icon" width="16" height="16"
+          src="img/cactii/bookmark.svg" alt="">Learn</a></li>
+				<li><a class="gem" href="/"><img alt="Sun Icon" width="16" height="16"
+          src="img/cactii/sun.svg" alt="">Grow</a></li>
+        <li><a class="gem active" href="/"><img alt="Utensils Icon" width="16" height="16"
+          src="img/cactii/utensils.svg" alt="">Eat</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- <section id="adspace">
+		<a class="advertisement" href="https://www.audi.com"></a>
+	</section> -->
+  <section id="banner">
+    <div id="overlay">
+      <h1>Edible Cactiii</h1>
+    </div>
+  </section>
+
+	<section id="content">
+
+		<div class="wrapper">
+			<main id="news">
+        <!-- article / story will go here. -->
+        <article id="story">
+          <h1>Welcome to CBC.CA</h1>
+          <p>The plant now known as <i><a href="https://en.wikipedia.org/wiki/Opuntia_ficus-indica" title="Opuntia ficus-indica">Opuntia ficus-indica</a></i>, or the Indian fig cactus, has long been an important source of food. The original species is thought to have come from central Mexico, although this is now obscure because the indigenous people of southern North America developed and distributed a range of horticultural varieties (<a href="https://en.wikipedia.org/wiki/Cultivar" title="Cultivar">cultivars</a>), including forms of the species and hybrids with other opuntias. Both the fruit and pads are eaten, the former often under the Spanish name <i>tuna</i>, the latter under the name <i><a href="https://en.wikipedia.org/wiki/Nopal" title="Nopal">nopal</a></i>.
+          </p>
+          <!-- see also: https://embedresponsively.com/ -->
+            <div class="embed">
+              <iframe src="https://www.youtube.com/embed/cc9lAlwqlFc"
+              frameborder="0" allowfullscreen></iframe>
+            </div>
+
+          <p>Cultivated forms are often significantly less spiny or even spineless.<sup id="cite_ref-FOOTNOTEAnderson200151–54_72-0" class="reference"><a href="#cite_note-FOOTNOTEAnderson200151–54-72">[70]</a></sup> The nopal industry in Mexico was said to be worth US$150&nbsp;million in 2007.<sup id="cite_ref-Dani07_73-0" class="reference"><a href="#cite_note-Dani07-73">[71]</a></sup> The Indian fig cactus was probably already present in the Caribbean when the Spanish arrived, and was soon after brought to Europe. It spread rapidly in the Mediterranean area, both naturally and by being introduced—so much so, early botanists assumed it was native to the area. Outside the Americas, the Indian fig cactus is an important commercial crop in <a href="https://en.wikipedia.org/wiki/Sicily" title="Sicily">Sicily</a>, <a href="https://en.wikipedia.org/wiki/Algeria" title="Algeria">Algeria</a> and other North African countries.<sup id="cite_ref-Grif04_71-1" class="reference"><a href="#cite_note-Grif04-71">[69]</a></sup> Fruits of other opuntias are also eaten, generally under the same name, <i>tuna</i>. Flower buds, particularly of <i><a href="https://en.wikipedia.org/wiki/Cylindropuntia" title="Cylindropuntia">Cylindropuntia</a></i> species, are also consumed.<sup id="cite_ref-FOOTNOTEAnderson200157–58_74-0" class="reference"><a href="#cite_note-FOOTNOTEAnderson200157–58-74">[72]</a></sup>
+          </p>
+
+          <figure>
+            <!-- CC BY-SA 2.0hide terms
+            https://en.wikipedia.org/wiki/Cactus#/media/File:Dragonfruit_Chiayi_market.jpg
+            File:Dragonfruit Chiayi market.jpg
+            Created: 25 December 2004 -->
+            <img alt="Dragonfruit for Sale at a Market" src="img/cactii/dragon.jpg" style="width: 100%;">
+            <figcaption>The pitaya, also known as dragonfruit or dragon pearl is the fruit of pitaya cactus.
+            </figcaption>
+          </figure>
+          <p>Almost any fleshy cactus fruit is edible. The word <i><a href="https://en.wikipedia.org/wiki/Pitaya" title="Pitaya">pitaya</a></i> or <i>pitahaya</i> (usually considered to have been taken into Spanish from Haitian creole<sup id="cite_ref-Collins_75-0" class="reference"><a href="#cite_note-Collins-75">[73]</a></sup>) can be applied to a range of "scaly fruit", particularly those of columnar cacti. The fruit of the <a href="https://en.wikipedia.org/wiki/Saguaro" title="Saguaro">saguaro</a> (<i>Carnegiea gigantea</i>) has long been important to the indigenous peoples of northwestern Mexico and the southwestern United States, including the <a href="https://en.wikipedia.org/wiki/Sonoran_Desert" title="Sonoran Desert">Sonoran Desert</a>. It can be preserved by boiling to produce syrup and by drying. The syrup can also be fermented to produce an alcoholic drink. Fruits of <i>Stenocereus</i> species have also been important food sources in similar parts of North America; <i><a href="https://en.wikipedia.org/wiki/Stenocereus_queretaroensis" title="Stenocereus queretaroensis">Stenocereus queretaroensis</a></i> is cultivated for its fruit. In more tropical southern areas, the climber <i><a href="https://en.wikipedia.org/wiki/Selenicereus_undatus" title="Selenicereus undatus">Selenicereus undatus</a></i> provides <i>pitahaya orejona</i>, now widely grown in Asia under the name dragon fruit. Other cacti providing edible fruit include species of  <i><a href="https://en.wikipedia.org/wiki/Echinocereus" title="Echinocereus">Echinocereus</a></i>, <i><a href="https://en.wikipedia.org/wiki/Ferocactus" title="Ferocactus">Ferocactus</a></i>, <i><a href="https://en.wikipedia.org/wiki/Mammillaria" title="Mammillaria">Mammillaria</a></i>, <i><a href="https://en.wikipedia.org/wiki/Myrtillocactus" title="Myrtillocactus">Myrtillocactus</a></i>, <i><a href="https://en.wikipedia.org/wiki/Pachycereus" title="Pachycereus">Pachycereus</a></i>, <i><a href="https://en.wikipedia.org/wiki/Peniocereus" title="Peniocereus">Peniocereus</a></i> and <i><a href="https://en.wikipedia.org/wiki/Selenicereus" title="Selenicereus">Selenicereus</a></i>. The bodies of cacti other than opuntias are less often eaten, although Anderson reported that <i><a href="https://en.wikipedia.org/wiki/Neowerdermannia_vorwerkii" title="Neowerdermannia vorwerkii">Neowerdermannia vorwerkii</a></i> is prepared and eaten like potatoes in upland Bolivia.<sup id="cite_ref-FOOTNOTEAnderson200155–59_76-0" class="reference"><a href="https://en.wikipedia.org/wiki/Cactus#cite_note-FOOTNOTEAnderson200155%E2%80%9359-76">[74]</a></sup>
+          </p>
+        </article>
+
+			</main>
+			<aside id="sidebar">
+				<!-- <h3>Sidebar Content goes here.</h3>
+				<div class="testBlock" style="width: 300px;">Width of this block is 300px</div>-->
+
+				<div class="widget">
+					<h2>
+            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" style="width: 40px;">
+            <path d="M23.4,11.4c-1.6,0-2.8,1.3-2.8,2.8v5.1h-1.4V3.8c0-2.1-1.7-3.8-3.8-3.8h-1.5c-2.1,0-3.8,1.7-3.8,3.8v9.9H8.9
+            	H8.7V8.6c0-1.6-1.3-2.8-2.8-2.8S3,7.1,3,8.6v7.9c0,1.6,1.3,2.8,2.8,2.8h4.2v13.3H6.5c-0.4,0-0.6,0.3-0.6,0.6V34h17.5v-0.6
+            	c0-0.4-0.3-0.6-0.6-0.6h-3.6V25h4.2c1.6,0,2.8-1.3,2.8-2.8v-7.9C26.2,12.7,24.9,11.4,23.4,11.4z M12.9,26c-0.3,0-0.6-0.3-0.6-0.6
+            	c0-0.3,0.3-0.6,0.6-0.6c0.3,0,0.6,0.3,0.6,0.6C13.4,25.8,13.2,26,12.9,26z M13.9,6.6c-0.3,0-0.6-0.3-0.6-0.6s0.3-0.6,0.6-0.6
+            	c0.3,0,0.6,0.3,0.6,0.6S14.2,6.6,13.9,6.6z M16.7,16.9c-0.3,0.4-1,0.5-1.4,0.2c-0.4-0.3-0.5-1-0.2-1.4s1-0.5,1.4-0.2
+            	C16.9,15.8,17,16.4,16.7,16.9z"/>
+            </svg><br/>Let's get prickly!
+					</h2>
+					<p>Succulent updates</p>
+					<form method="post" action="">
+						<label for="email">Email address:</label>
+						<input id="email" type="email" name="email" class="textbox" required="" placeholder="Enter your email address">
+						<input type="submit" class="submit" value="Subscribe">
+					</form>
+				</div>
+        <div class="widget">
+          <h2>Thanks!</h2>
+          <hr />
+          <p>Banner: <a href="https://en.wikipedia.org/wiki/Cactus#/media/File:Singapore_Botanic_Gardens_Cactus_Garden_2.jpg"
+          title="via Wikimedia Commons">Calvin teo</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a><br/>
+          Logo: Derived from <a title="Cactus by Ton from the Noun Project" href="https://thenounproject.com/search/?q=cactus&i=2115171"
+          >Cactus by Ton from the Noun Project</a><br/>Icons by: <a href="https://fontawesome.com/icons/"">FontAwesome</a><br />
+          <hr />Text adapted from:<br /><a href="https://wikipedia.org"><img width="100" src="img/cactii/wiki.svg" alt="Wikipedia Logo"></a>
+          <br />
+          <hr />
+          Video thanks to: <br /><a href="https://www.youtube.com/channel/UCzqbfYjQmf9nLQPMxVgPhiA">emmymadeinjapan</a>
+          <br />
+          <hr />
+          Layout inspiration: <a href="https://www.cbc.ca/">CBC.ca</a>
+          </p>
+        </div>
+			</aside>
+		</div>
+	</section>
+
+	<!-- this footer has been simplified from the original at CBC.ca-->
+	<footer id="footer">
+		<ul>
+
+			<li class="copyright">
+        Created by <a href="https://www.nsitu.ca"> Jingyue Zheng </a> for <a href="https://
+        student.utm.utoronto.ca/calendar/course_detail.pl?Depart=4&Course=CCT360H5">CCT360.
+        </a> Portions <span>©</span>2022 <a href="https://cbc.ca"> CBC/Radio-Canada </a>
+        , used inaccordance with <a href="https://laws-lois.justice.gc.ca/eng/acts/c-42/page-9.html#h-103270">Fair Dealing</a>.
+			</li>
+
+		</ul>
+	</footer>
+
+</body>
+
+</html>
